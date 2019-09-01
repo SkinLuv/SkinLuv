@@ -75,6 +75,9 @@ p {
  *------------------------------*/
 
 /*-----------Nav-links----------*/
+.header{
+    width: 100%;
+}
 .nav-bar {
     width: 100vw
     color: #FFFFFF;
