@@ -152,7 +152,7 @@ html {
  /*--------------------index-second-content---------------*/
  .index-second-container {
     position: relative;
-    width:;
+    width: 100%;
     height: 750px;
     padding-top: 10px;
     background-color: #F9B5A2;
@@ -203,6 +203,7 @@ img.icon-hover {
     margin-top: 5px;
 }
 .index-icons-wrap{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
@@ -215,16 +216,13 @@ img.icon-hover {
     font-size: 25px;
     color: #F4F2F1;
     display: block;
+    width: 100%;
 }
 .index-icons-wrap img{
-    width: 200px;
+    width: 100%x;
 }
-.index-icons-wrap img:hover{ 
-    width: 200px;
-}
-.index-icons-wrap .index-combination-skin-icon img{
-    width: 20px;
-}
+
+
 #scroll-down-for-more{
     width: 100px;
     display: flex;
