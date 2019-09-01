@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800&display=swap" rel="stylesheet">
+    <title>SkinLuv Homepage</title>
+</head>
+<body>
+    <header class="index-nav-bar">
+        <a href="index.html" class="index-first-logo">SkinLuv</a>
+        <input class="menu-button" type="checkbox" id="menu-button"/> <!---Checkboxes for quiz-->
+        <label class="burger-icon" for="menu-button"><span class="nav-icon"></span></label>
+        <ul class="menu">
+                <li><a href="importance.html">Importance</a></li>
+                <li><a href="information_skincare.html">Information</a></li>
+                <li><a href="skin_type_test.html">Skin test</a></li>
+            </ul>
+    </header>
+<!--second container-->
+    <div class="index-second-container">
+        <div class="index-second-logo">
+            <a href="index.html">SkinLuv</a>
+        </div>
+        <div class="index-icons-wrap">
+            <div id="index-dry-skin-icon">
+                <a href="dry_skin.html">
+                    <img class="icon-hover" alt="Find out more about dry skin" src="skincare-images/homepage-icon/dry-icon.svg" onmouseout="this.src='skincare-images/homepage-icon/dry-icon.svg'" onmouseover="this.src='skincare-images/homepage-icon/dry-white-icon.svg'">
+                    <p>Dry</p>
+                </a>
+            </div>
+            <div  id="index-oily-skin-icon">
+                <a href="oily_skin.html">
+                    <img class="icon-hover" alt="Find out more about oily skin" src="skincare-images/homepage-icon/oily-icon.svg" onmouseout="this.src='skincare-images/homepage-icon/oily-icon.svg'" onmouseover="this.src='skincare-images/homepage-icon/oily-white-icon.svg'">
+                    <p>Oily</p>
+                </a>
+            </div>
+            <div id="index-combination-skin">
+                <a href="combination_skin.html">
+                    <img class="icon-hover" alt="Find out more about combination skin" src="skincare-images/homepage-icon/combination-icon.svg" onmouseout="this.src='skincare-images/homepage-icon/combination-icon.svg'" onmouseover="this.src='skincare-images/homepage-icon/combination-white-icon.svg'">
+                    <p>Combination</p>
+                </a>
+            </div>
+            <div   id="index-sensitive-skin">
+                <a href="sensitive_skin.html">
+                    <img class="icon-hover" alt="Find out more about sensitive skin" src="skincare-images/homepage-icon/sensitive-icon.svg" onmouseout="this.src='skincare-images/homepage-icon/sensitive-icon.svg'" onmouseover="this.src='skincare-images/homepage-icon/sensitive-white-icon.svg'">
+                    <p>Sensitive</p>
+                </a>
+            </div>
+        </div>
+        <a href="#destination" class="scroll-top"><img id="scroll-down-for-more" alt="scroll-down-button" src="skincare-images/homepage-icon/scroll-down.svg"></a>
+        </div>
+
+
+    <!--third container-->
+    <div class="index-third-container">
+        <div id="destination"></div>
+        <div class="index-skin-type">
+            <div class="index-skin-type-image">
+                <img id="person-icon" alt="" src="skincare-images/homepage-icon/person.svg">
+            </div>
+            <div class="index-skin-type-text">
+                <h3>Don't know your skintype?</h3>
+                <p>That! okay! Everyone needs to start somewhere</p>
+                <a id="take-the-quiz" href="skin_type_test.html" >Take the quiz!</a>
+            </div>
+        </div>
+        <div class="index-self-luv">
+            <div class="index-self-luv-text">
+                <h3>SelfLuv</h3>
+                <p>Treat your skin once in a while! Skin care is a form of self love and is important for your health</p>
+            </div>
+            <div class="heart-message">
+                <img  id="heart-message" alt="heart-message" src="skincare-images/homepage-icon/heart-message.svg">
+            </div>
+        </div>
+        <div class="index-skincare-everyone">
+            <div class="index-skincare-everyone-image">
+               <img id="people-icon" alt="people" src="skincare-images/homepage-icon/people.svg">
+            </div>
+            <div class="index-skincare-everyone-text">
+                <h3>Skincare is for anyone</h3>
+                <p>Skincare is for anyone regardless of gender or age. What matters is the effort put into caring for ourselves</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

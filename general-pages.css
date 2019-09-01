@@ -1,0 +1,757 @@
+/*--------------------------------------------*
+ *♥*♡∞:｡.｡General Elements*｡.｡:∞♡*♥*
+ *--------------------------------------------*/
+body{
+    margin: 0;
+    font-family: 'nunito';
+    background-color: #F4F2F1;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1{
+    color: #5D8F8E;
+    text-align: center;
+    font-size: 45px;
+}
+h3{
+    color: #5D8F8E;
+}
+p {
+    color: #677172;
+    font-size: 17px;
+}
+
+.heading{
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.heading img{
+    width: 200px;
+}
+.heading h2{
+    font-weight: bold;
+    font-size: 45px;
+    color: #5D8F8E;
+}
+.heading strong{
+    color: #5D8F8E;
+}
+.heading p{
+    width: 90%;
+    margin: 0 auto;    
+}
+@media (min-width: 48em){
+    .heading p{
+    width: 600px;
+    margin: 0 auto;    
+    }   
+}
+/*--------------------------------------------*
+ *♥*♡∞:｡.｡Scrolling back to top button*｡.｡:∞♡*♥*
+ *--------------------------------------------*/
+ .scroll-top{
+    top: calc(50% - 80px);
+}
+ .scroll-back-to-top {
+    padding-top: 30px;
+    text-align: center;
+}
+.scroll-back-to-top img {
+    width: 60px;
+}
+.scroll-back-to-top a{
+     color: #F0BB69;
+     font-weight: bold;
+     font-size: 30px;
+     text-decoration: none;
+ }
+
+
+/*------------------------------*
+ *♥*♡∞:｡.｡Navigation bar*｡.｡:∞♡*♥*
+ *------------------------------*/
+
+/*-----------Nav-links----------*/
+.nav-bar {
+    color: #FFFFFF;
+    background-color: #F9B5A2;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+} 
+.nav-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #F9B5A2;
+}
+
+.nav-bar ul a{
+    display: block;
+    padding: 20px;
+    font-size: 15px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.nav-bar ul a:hover{
+    background-color: #5D8F8E;
+    color: #F9B5A2;
+}
+.nav-bar .current{
+    background-color: #F4F2F1;
+    color: #5D8F8E
+}
+
+.nav-bar .nav-bar-logo {
+    float: left;
+    opacity: 1; 
+    font-size: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 30px;
+
+}
+
+/*--------Nav-Hamburger---------*/
+.nav-bar .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.nav-bar .burger-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.nav-bar .burger-icon .nav-icon{
+    background: #5D8F8E; 
+    display: block;
+    height: 4px;
+    width: 25px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.nav-bar .burger-icon .nav-icon:before{
+    background: #5D8F8E;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+.nav-bar .burger-icon .nav-icon:after{
+    background: #5D8F8E;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.nav-bar .menu-button{
+    display: none;
+}
+
+.nav-bar .menu-button:checked ~ .menu{
+    max-height: 240px; /*transition was already set up in .header .menu and max height was zero but now when checked, we've made max-height to 240px*/
+}
+
+.nav-bar .menu-button:checked ~ .burger-icon .nav-icon{
+    background: transparent;
+}
+
+.nav-bar .menu-button:checked ~ .burger-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.nav-bar .menu-button:checked ~ .burger-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+/*--------Responsive-Nav-Bar-------*/
+@media (min-width: 48em){
+    .nav-bar li{
+        float: left;
+    }
+    .nav-bar li a{
+        padding: 20px 30px; 
+    }
+    .nav-bar .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .nav-bar .burger-icon{
+        display: none;
+    }
+}
+
+/*--------------------------------*
+ *Page: Types of skincare Products*
+ *--------------------------------*/
+.types-of-skin-products h2 {
+    color: #5D8F8E;
+}
+
+.types-of-skin-products-content h3 {
+    color: #F9B5A2;
+    font-size: 40px;
+}
+
+/* Types of skin care product HEADING*/
+.types-of-skin-products {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.types-of-skin-products img{
+    width: 100%;
+}
+/*--------Types of product-------*/
+.types-of-skin-products-content{
+    width: 450px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.types-of-skin-products-content img{
+    margin: 0 -100px;
+    width: 180px;
+}
+
+.product-icon{
+    text-align: center;
+    grid-area: product-icon;
+}
+.product-text{
+    grid-area: product-text;
+    text-align: center;
+}
+.product{
+    padding-top: 30px;
+    display: grid;
+    text-align: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "product-icon"
+    "product-text";
+}
+/*Responsive: Types of skin-products-content*/
+@media (min-width: 48em){ 
+        .types-of-skin-products-content{
+            width: 800px;
+            margin: 0 auto;
+        }
+        
+        .types-of-skin-products {
+            width: 600px;    
+            text-align: center;
+            margin: 0 auto;
+        }
+        .types-of-skin-products img{
+            width: 600px;
+        }
+        .product-text{
+             width: 100%;
+        }
+        .product-icon{
+            padding-top: 60px;
+        }
+        .product{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-template-areas:
+            "product-icon product-text";
+        }
+ }
+/*----------------------------------------------*
+*♥*♡∞:｡.｡Page: Skincare information page*｡.｡:∞♡*♥*
+ *----------------------------------------------*/
+.skincare-information img{
+    width: 200px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.skincare-info h2{
+    color: #5D8F8E;
+}
+.skincare-info p{
+    color: white;
+    width: 90%; 
+}
+.skincare-info  h2, p{
+    text-align: center;
+}
+
+.skincare-information-first-box {
+    background-color: #F9B5A2;
+    text-align: center;
+    border-radius: 35px;
+    margin: 5px 50px 5px 30px;
+    display: block;
+    text-decoration: none;
+    grid-area: skincare-information-first-box;
+}
+
+.skincare-information-second-box {
+    background-color: #F9B5A2;
+    text-align: center;
+    max-width: 100%;
+    margin: 5px 50px 5px 30px;
+    border-radius: 35px;
+    display: block;
+    text-decoration: none;
+    grid-area: skincare-information-second-box;
+}
+
+.skincare-information-grid {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 0 15px ;
+    width: 100%;
+    grid-template-areas: 
+    "skincare-information-first-box"
+    "skincare-information-second-box";
+}
+/*------Responsive: skincare information page-------*/
+@media (min-width: 48em){
+        .skincare-info{
+            padding: 10px;
+        }
+        .skincare-information-grid{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            grid-template-areas:
+            "skincare-information-first-box skincare-information-second-box";
+        }
+        .skincare-information-first-box{
+            margin: 0 15px 20px 20px;
+        }
+        .skincare-information-second-box{
+            margin: 0 20px 20px 5px;
+        }
+}
+/*---------------------------------------------------*
+ *♥*♡∞:｡.｡Page: general styling for skintypes*｡.｡:∞♡*♥*
+ *---------------------------------------------------*/
+
+ /*-------------skintype general style---------------*/
+
+.skin-type h2{
+    color: #F0BB69;
+    text-align: center;
+} 
+.skin-type-information li{
+    color: #677172;
+}
+.skin-type-information strong{
+    color: #5D8F8E;
+}
+/*---------------Skin-type symptoms----------------*/
+.skin-type-container-1{
+    width: 450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "skin-type-logo"
+    "symptom-information";
+}
+.skin-type-logo{
+    grid-area: skin-type-logo;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.symptom-information {
+    grid-area: symptom-information;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/*----------------Skin type causes---------------*/
+.skin-type-container-2{
+    width: 450px;
+    margin: 0 auto;
+}
+.skin-type-container-2 h2{
+    text-align: center;
+}
+/*--------------Skin-type treatment--------------*/
+.skin-type-container-3{
+    width: 450px;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "treatment-logo"
+    "treatment-information";
+}
+.treatment-logo{
+    grid-area: treatment-logo;
+    text-align: center;
+}
+.treatment-logo img{
+    width: 150px;
+    padding-top: 30px;
+}
+.treatment-information {
+    grid-area: treatment-information;
+}
+/*-------------links to other skin types----------*/
+.other-skin-types{
+    width: 450px;
+    padding: 10px 5% 10px 5%;
+    margin: 10px auto;
+}
+.other-skin-types a{
+    text-align: center;
+    text-decoration: none;
+    color: #5D8F8E;
+    font-weight: bold;
+    display: block;
+}
+.other-skin-types-icons img{ 
+    width: 80px;
+}
+
+.other-skin-types-icons{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "skin-type-icon1 skin-type-icon2 skin-type-icon3";
+}
+.skin-type-icon1{
+    grid-area: skin-type-icon1;
+    text-align: center;
+}
+.skin-type-icon2{
+    display:block;
+    grid-area: skin-type-icon2;
+    text-align: center;
+}
+.skin-type-icon3{
+    display:block;
+    grid-area: skin-type-icon3;
+    text-align: center;
+}
+/*Responsive: Other types of skin*/
+@media (min-width: 48em){ 
+    .skin-type-information h2{
+        text-align: left;
+    } 
+    .skin-type-container-1{
+        width: 700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "skin-type-logo symptom-information";
+    
+    }
+    .skin-type-container-2{
+        width: 700px;
+    }
+    .skin-type-container-2 h2{
+        text-align: center;
+    }
+    .skin-type-container-3{
+        width: 700px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "treatment-logo  treatment-information";
+    }
+    .symptom-information{
+        padding: 0 210px 0 0;
+        float: left;
+        width: 200px;
+
+    }
+    .treatment-information{
+        width: 400px;
+    }
+    
+    .other-skin-types{
+        width: 600px;
+        padding: 10px 5% 10px 5%;
+        margin: 0 auto;
+    }
+}
+
+/*------------------------------------*
+ *♥*♡∞:｡.｡Page: Skin type test*｡.｡:∞♡*♥*
+ *------------------------------------*/
+ #quiz-heading {
+    color: #F0BB69;
+}
+/*------------Quiz styling------------*/ 
+.quiz{
+    text-align: center;
+}
+.quiz h3{
+    color: #5D8F8E;
+    font-size: 25px;
+}
+.quiz img{
+    width: 150px;
+    margin: 0 auto;
+}
+.quiz li strong{
+    color: #5D8F8E;
+    padding-right: 20px;
+}
+
+.quiz li{
+    height: 40px;
+    list-style: none;
+    text-align: left;
+    color: #677172;
+}
+.question-image{
+    grid-area: question-image;
+}
+.question-answer{
+    grid-area: question-answer;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+}
+.question-1, .question-2, .question-3, .question-4{
+    vertical-align: middle;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "question-image"
+    "question-answer";
+}
+/*----------Skin type results------------*/
+.results-header h3{
+    color: #5D8F8E; 
+    font-size: 20px;
+    text-align: center;
+    padding-top: 70px;
+
+}
+.result-content{
+    width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "result-content-1 result-content-2"
+    "result-content-3 result-content-4" ;
+}
+.result img{
+    width: 100px;
+}
+
+.result-content-1, .result-content-2, .result-content-3, .result-content-4{
+    text-align: center;
+}
+.result a{
+    display: block;
+    text-decoration: none;
+}
+.result p{
+    padding-top: 0;
+    font-weight: bold;
+    color: #5D8F8E;
+}
+.result h4{
+    color: #F0BB69;
+}
+
+.result-content-1{
+    grid-area: result-content-1;
+}
+.result-content-2{
+    grid-area: result-content-2;
+}
+.result-content-3 {
+    grid-area: result-content-3;
+}
+.result-content-4{
+    grid-area: result-content-4;
+}
+
+/*----------------responsive quiz-------------*/
+@media (min-width: 48em){
+
+    .question-1, .question-2, .question-3, .question-4{
+        width: 700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "question-image question-answer";
+    }
+    .result-content{
+        width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "result-content-1 result-content-2 result-content-3 result-content-4" ;
+    }
+}
+/*------------------------------------*
+ *♥*♡∞:｡.｡Page: Skin care tips*｡.｡:∞♡*♥*
+ *------------------------------------*/
+
+.tip{
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+.tip-grid img{
+    width:180px;
+}
+
+
+.tip-text{
+    grid-area: tip-text;
+}
+.h3-none {
+    display: none;
+}
+.tip-grid{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "tip-image"
+    "tip-text";
+}
+
+/*-----------responsive: skincare tips----------*/
+@media (min-width: 48em){
+ 
+    .tip{
+        width: 600px;
+    }
+    .tip-text h3{
+        display: block;
+     }
+     .tip p{
+        text-align: left;
+     }
+     .tip-image h3{
+         display: none;
+     }
+     .tip-image {
+         width: 180px;
+     }
+     .tip-grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "tip-image tip-text";
+    }
+    .tip-basic{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .tip-basic h3{
+        text-align: center;
+    }
+}
+/*------------------------------------------*
+ *♥*♡∞:｡.｡Page: Self-care importance*｡.｡:∞♡*♥*
+ *------------------------------------------*/
+.self-care-importance{
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+.self-care-grid img{
+    width:180px;
+}
+.self-care-image{
+    grid-area: tip-image;
+}
+
+.self-care-text{
+    grid-area: tip-text;
+}
+.self-care-text h3{
+    display: none;
+}
+.self-care-grid{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "tip-image"
+    "tip-text";
+}
+.external-resources ul{
+    color: #5D8F8E;
+    text-align: left;
+}
+.external-resources a{
+    color: #677172;
+}
+.external-resources a:visited{
+    color: #F0BB69;
+}
+/*-----------responsive: skincare importance----------*/
+@media (min-width: 48em){
+ 
+    .self-care-importance{
+        width: 600px;
+    }
+    .self-care-text h3{
+        display: block;
+     }
+     .self-care-text p{
+        text-align: left;
+     }
+     .self-care-image h3{
+         display: none;
+     }
+     .self-care-grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        "tip-image tip-text";
+    }
+}

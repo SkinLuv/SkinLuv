@@ -1,0 +1,404 @@
+/*---------------------------------------*
+ *♥*♡∞:｡.｡Index: General Elements*｡.｡:∞♡*♥*
+ *---------------------------------------*/
+body{
+    margin: 0;
+    font-family: 'nunito';
+    background-color: #F4F2F1;
+}
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+/*----------------------------------------------------*
+ *♥*♡∞:｡.｡Index: Scrolling back to top button*｡.｡:∞♡*♥*
+ *---------------------------------------------------*/
+.scroll-top{
+    top: calc(50% - 80px);
+}
+/*-------------------------------------*
+ *♥*♡∞:｡.｡Index: Navigation bar*｡.｡:∞♡*♥*
+ *-------------------------------------*/
+
+/*-----------Nav-links----------*/
+.index-nav-bar {
+    color: #FFFFFF;
+    background-color: #F9B5A2;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+} 
+
+.index-nav-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #F9B5A2;
+}
+
+.index-nav-bar ul a{
+    display: block;
+    padding: 20px;
+    font-size: 15px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.index-nav-bar ul a:hover{
+    background-color: #5D8F8E;
+    color: #F9B5A2;
+}
+
+.index-nav-bar .index-first-logo {
+    float: left;
+    opacity: 1; /*make top left logo appear mobile*/
+    font-size: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.index-nav-bar .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+/*--------Nav-Hamburger---------*/
+.index-nav-bar .burger-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.index-nav-bar .burger-icon .nav-icon{
+    background: #5D8F8E; 
+    display: block;
+    height: 4px;
+    width: 25px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.index-nav-bar .burger-icon .nav-icon:before{
+    background: #5D8F8E;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+.index-nav-bar .burger-icon .nav-icon:after{
+    background: #5D8F8E;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.index-nav-bar .menu-button{
+    display: none;
+}
+
+.index-nav-bar .menu-button:checked ~ .menu{
+    max-height: 240px; /*transition was already set up in .header .menu and max height was zero but now when checked, we've made max-height to 240px*/
+}
+
+.index-nav-bar .menu-button:checked ~ .burger-icon .nav-icon{
+    background: transparent;
+}
+
+.index-nav-bar .menu-button:checked ~ .burger-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.index-nav-bar .menu-button:checked ~ .burger-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*--------Index: Responsive-Nav-Bar-------*/
+ @media (min-width: 48em){ 
+    .index-nav-bar li{
+        float: left;
+    }
+    .index-nav-bar li a{
+        padding: 20px 30px; 
+    }
+    .index-nav-bar .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .index-nav-bar .burger-icon{
+        display: none;
+    }
+    .index-nav-bar .index-first-logo{
+        opacity: 0;/*make top left logo disappear desktop*/
+    }
+
+
+ }
+ /*--------------------index-second-content---------------*/
+ .index-second-container {
+    position: relative;
+    width:;
+    height: 750px;
+    padding-top: 10px;
+    background-color: #F9B5A2;
+}
+.index-second-logo {
+    justify-content: center;
+    display: none;/*make big logo disappear mobile*/
+    padding-top: 40px;
+}
+.index-second-logo a{
+    font-size: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: center;
+}
+
+.index-icons-wrap > div{
+    padding: 1em;
+}
+.index-icons-wrap{
+    text-align: center;
+}
+
+#index-dry-skin-icon{
+    grid-area: dry-skin-icon;
+}
+#index-oily-skin-icon{
+    grid-area: oily-skin-icon;
+}
+#index-combination-skin-icon{
+    grid-area: combination-skin-icon;
+}
+#index-sensitive-skin-icon{
+    grid-area: sensitive-skin-icon;
+}
+img.icon-hover {
+    margin:20px;
+    padding: 3px;
+      -webkit-transition: margin 0.5s ease-out;
+      -moz-transition: margin 0.5s ease-out;
+      -o-transition: margin 0.5s ease-out;
+}
+  img.icon-hover:hover {
+	cursor:pointer;
+    margin-top: 5px;
+}
+.index-icons-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "dry-skin-icon oily-skin-icon"
+    "combination-skin-icon sensitive-skin-icon";
+}
+
+.index-icons-wrap a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #F4F2F1;
+    display: block;
+}
+.index-icons-wrap img{
+    width: 200px;
+}
+.index-icons-wrap img:hover{ 
+    width: 200px;
+}
+.index-icons-wrap .index-combination-skin-icon img{
+    width: 20px;
+}
+#scroll-down-for-more{
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+@media screen and (min-width: 48em){
+    .index-second-container{
+        height:100%;
+    }
+    .index-icons-wrap{
+        margin: 0 auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "dry-skin-icon oily-skin-icon combination-skin-icon sensitive-skin-icon";
+    }
+    .index-second-logo{
+        display: flex;
+    }
+    #scroll-down-for-more{
+        padding-top: 10px;
+    }
+}
+
+
+/*------------index-third-container----------------*/
+.index-third-container img{
+    width: 200px;
+}
+.index-third-container{
+    width: 400px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+.index-third-container p{
+    font-size: 20px;
+    color: #677172;
+}
+.index-third-container h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #5D8F8E;
+}
+.index-skin-type{
+    padding: 100px 0 80px 0;
+}
+
+/*---------------index-third-content grid area*-----------/
+/*skin type description*/
+.index-skin-type-image{
+    margin: 0 auto;
+    grid-area: index-skin-type-image;
+}
+.index-skin-type-text{
+    text-align: center;
+    grid-area: index-skin-type-text;
+}
+/*self love*/
+.index-self-luv{
+    padding-bottom: 80px;
+}
+
+.index-self-luv-text {
+    text-align: center;
+    grid-area: self-luv-text;
+}
+.heart-message{
+    margin: 0 auto;
+    grid-area: heart-message;
+}
+
+/*everyone skincare*/
+.index-skincare-everyone-image {
+    margin: 0 auto;
+    grid-area: everyone-image;
+}
+.index-skincare-everyone-text{
+    text-align: center;
+    grid-area: everyone-text;
+}
+
+/*index third content grid*/
+.index-skin-type{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "index-skin-type-image "
+    "index-skin-type-text";
+}
+.index-self-luv{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "heart-message"
+    "self-luv-text";
+}
+.index-skincare-everyone{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "everyone-image"
+    "everyone-text";
+}
+
+/*--------------------------------------*
+ *♥*♡∞:｡.｡Button: Take the quiz*｡.｡:∞♡*♥*
+ *--------------------------------------*/
+#take-the-quiz {
+    background-color: #F1BB6A;
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: #F4F2F1;
+    text-decoration: none;
+    font-size: 20px; 
+    -webkit-transition: padding 0.2s ease-in;
+        -moz-transition: padding 0.2s ease-in;
+        -o-transition: padding 0.2s ease-in;
+   
+}
+#take-the-quiz:hover {
+        cursor:pointer;
+        padding: 10px 50px;
+        -webkit-transition: padding 0.5s ease-out;
+        -moz-transition: padding 0.5s ease-out;
+        -o-transition: padding 0.5s ease-out;
+       
+    }
+
+
+
+/*mobile response: third container*/
+@media screen and (min-width: 48em){
+    .index-third-container{
+        width: 800px;
+    }
+    .index-skin-type {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        grid-template-areas:
+        "index-skin-type-image index-skin-type-text"
+    }
+    .index-self-luv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "self-luv-text heart-message";
+    }
+    .index-skincare-everyone{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "everyone-image everyone-text";
+        }
+    #girl-icon img{
+        width: 180px;
+    }
+}
+
+

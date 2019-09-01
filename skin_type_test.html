@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="general-pages.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,800,1000&display=swap" rel="stylesheet">
+    <title>HOMEPAGE</title>
+
+</head>
+    <header class="nav-bar">
+            <a href="index.html" class="nav-bar-logo">SkinLuv</a>
+            <input class="menu-button" type="checkbox" id="menu-button"/> <!---Checkboxes for quiz-->
+            <label class="burger-icon" for="menu-button"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                    <li><a href="importance.html">Importance</a></li>
+                    <li><a href="information_skincare.html">Tips</a></li>
+                    <li><a class="current" href="skin_type_test.html">Skin test</a></li>
+                </ul>
+    </header>
+        <div class="container">
+            <div class="heading">
+                <h2 id="quiz-heading">Skin Type Test</h2>
+                <p><strong>Instructions: </strong>Find out your skin type keeping track of which letter you answered the most</p>
+            </div>
+            <div class="quiz">
+                    <h3>1.) What is your skin texture?</h3>
+                <div class="question-1">
+                    <div class="question-image"><img alt="Describe skin texture" src="skincare-images/skincare-quiz/exfoliator-quiz.svg"></div>
+                    <div class="question-answer">
+                        <li><strong>a.)</strong>Rough</li>
+                        <li><strong>b.)</strong>Shiny</li>
+                        <li><strong>c.)</strong>Bumpy </li>
+                        <li><strong>d.)</strong>Both rough and shiny</li>
+                    </div>
+                </div>
+                <h3>2.) How often do you have pimples?</h3>
+                <div class="question-2">
+                    <div class="question-image"><img alt="Pimple icon to escribe your pimples" src="skincare-images/skincare-quiz/pimple-quiz.svg" ></div>
+                    <div class="question-answer">
+                        <li><strong>a.)</strong>Once a month</li>
+                        <li><strong>b.)</strong>Once a week</li>
+                        <li><strong>c.)</strong>Twice a week </li>
+                        <li><strong>d.)</strong>Twice a month</li>
+                    </div>
+                </div>
+                <h3>3.) How often do you feel tightness?</h3>
+                <div class="question-3">
+                        <div class="question-image"><img alt="Hand tight icon" src="skincare-images/skincare-quiz/tight-quiz.svg" ></div>
+                    <div class="question-answer">
+                        <li><strong>a.)</strong>Very often</li>
+                        <li><strong>b.)</strong>Never</li>
+                        <li><strong>c.)</strong>Not that often  </li>
+                        <li><strong>d.)</strong>Often</li>
+                    </div>
+                </div>
+                <h3>4.) Describe your pores </h3>
+                <div class="question-4">
+                     <div class="question-image"><img alt="Pore icon to describe your pimples" src="skincare-images/skincare-quiz/pimple-quiz.svg" ></div>
+                        <div class="question-answer">
+                        <li><strong>a.)</strong>Barely visible</li>
+                        <li><strong>b.)</strong>Large and clogged</li>
+                        <li><strong>c.)</strong>Large and visible</li>
+                        <li><strong>d.)</strong>Somewhat visible</li>
+                    </div>
+                </div>
+                 </div> 
+            </div>
+            <div class="result">
+                <div class="results-header">
+                        <h3>If you got mostly:</h3>
+                </div>
+                <div class="result-content">
+                    <div class="result-content-1">
+                        <a href="dry_skin.html"> 
+                            <h4>a.)</h4>
+                            <img alt="Mostly a.) means dry skin type" onmouseout="this.src='skincare-images/skincare-quiz/dry-pink-icon.svg'" onmouseover="this.src='skincare-images/skincare-quiz/dry-green-icon.svg'" src="skincare-images/skincare-quiz/dry-pink-icon.svg">
+                            <p>Dry</p>
+                        </a>    
+                    </div>
+                    <div class="result-content-2">
+                        <a href="oily_skin.html">
+                            <h4>b.)</h4>
+                            <img alt="Mostly b.) means oily skin type" onmouseout="this.src='skincare-images/skincare-quiz/oil-drop-pink-icon.svg'" onmouseover="this.src='skincare-images/skincare-quiz/oil-drop-green-icon.svg'"  src="skincare-images/skincare-quiz/oil-drop-pink-icon.svg">
+                            <p>Oily</p>
+                        </a>
+                    </div>
+                    <div class="result-content-3">
+                        <a href="sensitive_skin.html">
+                            <h4>c.)</h4>
+                            <img alt="Mostly c.) means sensitive skin type" onmouseout="this.src='skincare-images/skincare-quiz/sensitive-pink-icon.svg'" onmouseover="this.src='skincare-images/skincare-quiz/sensitive-green-icon.svg'" src="skincare-images/skincare-quiz/sensitive-pink-icon.svg">
+                            <p>Sensitive</p>
+                        </a>
+                    </div>
+                    <div class="result-content-4">
+                        <a href="combination_skin.html">
+                            <h4>d.)</h4>
+                            <img alt="Mostly d.) means combination skin type" onmouseout="this.src='skincare-images/skincare-quiz/combination-pink-icon.svg'" onmouseover="this.src='skincare-images/skincare-quiz/combination-green-icon.svg'" src="skincare-images/skincare-quiz/combination-pink-icon.svg">
+                            <p>Combination</p>
+                        </a>
+                    </div>
+                </div>
+             </div>
+    </body>
+</html>
