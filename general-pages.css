@@ -23,7 +23,7 @@ p {
 }
 /*----General heading -------*/
 .heading{
-    padding-top: 20px;
+    padding: 20px;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -32,6 +32,7 @@ p {
     width: 200px;
 }
 .heading h2{
+    width: 100%;
     font-weight: bold;
     font-size: 45px;
     color: #5D8F8E;
@@ -41,7 +42,8 @@ p {
 }
 .heading p{
     width: 90%;
-    margin: 0 auto;    
+    margin: 0 auto;
+    padding: 0 0 0 20px;    
 }
 @media (min-width: 48em){
     .heading p{
@@ -707,15 +709,15 @@ p {
 .self-care-grid img{
     width:180px;
 }
+.self-care-text h3{
+    display: none;
+}
 .self-care-image{
     grid-area: tip-image;
 }
 
 .self-care-text{
     grid-area: tip-text;
-}
-.self-care-text h3{
-    display: none;
 }
 .self-care-grid{
     margin: 0 auto;
